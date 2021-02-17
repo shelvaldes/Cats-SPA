@@ -14,7 +14,7 @@ module.exports = {  //Aquí se encuentra toda la configuración de lo que va a s
     module: { //Se crea un modulo con las reglas necesarias que vamos a utilizar.
         rules: [    //Reglas
             {   // Estructura de Babel
-                test: /\,js?$/, //Nos permite identificar los archivos según se encuentran en nuestro entorno.
+                test: /\.js?$/, //Nos permite identificar los archivos según se encuentran en nuestro entorno.
                 exclude: /node_modules/,    //Excluimos la carpeta de node modules
                 use: {
                     loader: 'babel-loader',    //Utilizar un loader como configuración establecida.
