@@ -10,7 +10,7 @@
   },
   "keywords": [],
   "author": "shelvaldes",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.12.13",
     "babel-loader": "^8.2.2",
