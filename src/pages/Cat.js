@@ -1,7 +1,7 @@
 const Cat = () => {
     const view = `
-        <div class="cats-inner">
-            <article class="cats-card">
+        <div class="Cats-inner">
+            <article class="Cats-card">
                 <img src="image" alt="name">
                 <h2>Name</h2>
             </article>
