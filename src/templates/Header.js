@@ -10,6 +10,7 @@ const Header = () => {
             </div>
             <div class="Header-nav">
                 <a href="#/about/">
+                about
                 </a>
             </div>
         </div>
