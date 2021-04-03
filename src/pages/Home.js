@@ -1,25 +1,20 @@
 import getData from "../utils/getData"
 
-import getData from '../utils/getData.js'
-
 const Home = async () => {
     const cats = await getData()
-
     const view = `
     <div class="Cats">
-        ${cats.results.map(chat = => `
+        ${cats.map(cat => `
         <article class="Cat-item">
-        <a href="#/1/">
-            <img src="image" alt="name">
-            <h2>Author</h2>
+        <a href="#${cat.id}">
+            <img src="${cat.urls.regular}" alt="${cat.description}">
+            <h4>Author</h4>
+            <h2>${cat.user.username}</h2>
         </a>
     </article>
         
         `).join('')}
-
-        
-    </div>
-    
+    </div>   
     `
     return view
 }
