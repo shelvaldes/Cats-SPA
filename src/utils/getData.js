@@ -14,7 +14,6 @@ const KEY = '?client_id=H4TPx6Ro7-WWc4YCcpneMMpGCmunz99gafUZTBMboyM'
 
 const getData = async (id) => {
     const apiURL = id ? `${API}${id}${KEY}` : API+KEY;
-    console.log(apiURL)
     try {
         const response = await fetch(apiURL)
         const data = await response.json()
