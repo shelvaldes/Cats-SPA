@@ -1,10 +1,10 @@
 import getHash from '../utils/getHash'
-//import getData from '../utils/getData'
-import getDataItem from '../utils/getDataItem'
+import getData from '../utils/getData'
+//import getDataItem from '../utils/getDataItem'
 
 const Cat = async () => {
     const id = getHash()
-    const cat = await getDataItem(id)
+    const cat = await getData(id)
     const view = `
         <div class="Cats-inner">
             <article class="Cats-card">
