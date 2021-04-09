@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+:root {
+    --gray: #5a5e5f;
+    --o: 10px;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+
+
+body{
+    font-family: Open Sans;
+    color: var(--gray);
+    background-color: #E0E7E7;
+    text-align: center;
+}
+
+a{
+    color: var(--gray);
+}
+
+.Header-main{
+    padding: 100px 0px 50px;
+}
+
+ h1{
+    font-family: Righteous;
+    font-weight: normal;
+    font-weight: normal;
+    font-size: 3rem;
+    text-decoration: none;
+    color: var(--gray);
+    height: 4.125rem;
+}
+
+.Header-nav :link{
+    
+}
