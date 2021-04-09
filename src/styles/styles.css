@@ -20,8 +20,9 @@ body{
     font-family: Open Sans;
     color: var(--gray);
     background-color: #E0E7E7;
-    text-align: center;
+    
 }
+
 
 a{
     color: var(--gray);
@@ -29,6 +30,7 @@ a{
 
 .Header-main{
     padding: 100px 0px 50px;
+    text-align: center;
 }
 
  h1{
@@ -42,5 +44,56 @@ a{
 }
 
 .Header-nav :link{
+    
+}
+
+.loading{
+    
+}
+
+.Cats{
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 960px;
+    margin: auto;
+    max-height: 93em;
+    margin: auto;
+    padding: 0px, 30px;
+    overflow: hidden;
+
+}
+.Cat-item{
+    flex-grow: 1;
+    width: 30%;
+    margin: 10px;
+    position: relative;
+    
+    
+}
+.Cat-item img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.Cat-item p{
+    color: #666;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000;
+    text-align: right;
+}
+
+@media (max-width: 658px){
+    .Cats{
+        margin: 0px 10px;
+        max-height: 140em;
+        margin-bottom: 20px;
+    }
+    .Cat-item{
+        width: 47%;
+    }
+
     
 }

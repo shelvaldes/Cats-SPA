@@ -8,8 +8,7 @@ const Home = async () => {
         <article class="Cat-item">
         <a href="#/${cat.id}">
             <img src="${cat.urls.regular}" alt="${cat.description}">
-            <h4>Author</h4>
-            <h2>${cat.user.username}</h2>
+            <p>by ${cat.user.username}</p>
         </a>
     </article>
         
