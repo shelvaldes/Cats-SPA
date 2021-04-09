@@ -9,11 +9,12 @@ const Cat = async () => {
         <div class="Cats-inner">
             <article class="Cats-card">
                 <img src="${cat.urls.regular}" alt="${cat.description}">
-                <h5>Author</h5>
-                <h4>${cat.user.username}</h4>
+                
             </article>
-            <article class="Cats-card">
-                <a href="${cat.user.links.self}">
+            <article class="Cats-info">
+            <h5>Author:</h5>
+                <h4>${cat.user.username}</h4>
+                    
                     <h6>${cat.user.name}</h6>
                 </a>
             </article>
@@ -22,3 +23,5 @@ const Cat = async () => {
     return view
 }
 export default Cat
+
+/* <a href="${cat.user.links.self}?client_id=H4TPx6Ro7-WWc4YCcpneMMpGCmunz99gafUZTBMboyM"> */

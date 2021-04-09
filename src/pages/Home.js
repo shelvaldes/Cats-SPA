@@ -17,6 +17,7 @@ const Home = async () => {
         `).join('')}
     </div>  
     </div> 
+    <footer>Powered by Unsplash</footer>
     `
     return view
 }
