@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --gray: #5a5e5f;
+    --o: 10px;
+    --shadow: box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25), inset 0px 4px 50px rgba(49, 49, 49, 0.2);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: var(--gray);
+    background-color: #E0E7E7;
+    
+}
+
+
+a{
+    color: var(--gray);
+}
+
+.Header-main{
+    padding: 100px 0px 50px;
+    text-align: center;
+}
+
+ h1{
+    font-family: Righteous;
+    font-weight: normal;
+    font-weight: normal;
+    font-size: 3rem;
+    text-decoration: none;
+    color: var(--gray);
+    height: 4.125rem;
+}
+
+.Header-nav link{
+    
+}
+
+
+.Cats-wrapper{
+    display: flex;
+    overflow: hidden;
+    border-color: seagreen;
+    
+
+}
+.Cats{
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 958px;
+    margin: auto;
+    
+    
+}
+.Cat-item{
+    margin: auto;
+    width: 30%;
+    margin-bottom: 20px
+    
+}
+.Cat-item:last-child{
+    display: none;
+}
+.Cat-item img, .Cats-card img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.Cat-item img{
+    height: 300px;
+}
+
+
+.tag{
+    position: relative;
+}
+.tag p{
+    color: rgb(56, 56, 56);
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000;
+    text-align: right;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 959px){
+    .Cat-item img{
+        height: 200px;
+    }
+    .Cats{
+        margin: 10px;
+    }
+}
+
+@media (max-width: 669px){
+    .Header-main{
+        padding-bottom: 20px;
+    }
+    .Cat-item{
+        margin-bottom: 0px;
+    }
+    .Cat-item img{
+        height: 200px;
+        margin: 4px 4px;
+    }
+    .Cats{
+    }
+    .tag p{
+        font-size: 0.5rem;
+        padding-bottom: 7px;
+    }
+}
+/* detail */
+
+.Cats-inner{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.Cats-card{
+    margin: 0px 20px 20px 20px;
+
+}
+
+.Cats-info{
+    position: relative;
+    padding: 20px;
+    background-color: seashell;
+    border-radius: 10px;
+    margin: 0px 20px 
+
+}
+h4{
+    margin-top: 4px;
+}
+h6{
+    margin-top: 6px;
+}
+
+.Error404{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vw-(4.135rem);
+}
+.Error404 img{
+    margin-bottom: 20px;
+    width: 100px;
+    border-radius: 7px;
+    
+}
+
+.Error404 h2{
+    font-size: 2.6rem;
+}
+
+img, .Cats-info {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25), inset 0px 4px 50px rgba(49, 49, 49, 0.2);
+}
+
+footer{
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 0.7rem;
+}
