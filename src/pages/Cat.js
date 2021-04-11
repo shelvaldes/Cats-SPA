@@ -12,10 +12,10 @@ const Cat = async () => {
                 
             </article>
             <article class="Cats-info">
-            <h5>Author:</h5>
-                <h4>${cat.user.username}</h4>
-                    
-                    <h6>${cat.user.name}</h6>
+                <h5>Author:</h5>
+                <a href="${cat.user.links.html}">
+                <h4>${cat.user.username}</h4>    
+                <h6>${cat.user.name}</h6>
                 </a>
             </article>
         </div>
@@ -24,4 +24,4 @@ const Cat = async () => {
 }
 export default Cat
 
-/* <a href="${cat.user.links.self}?client_id=H4TPx6Ro7-WWc4YCcpneMMpGCmunz99gafUZTBMboyM"> */
+/*  */
